@@ -72,9 +72,21 @@
       </a>
       <nav class="nav" id="nav">
         <a href="#services">Services</a>
+        <span class="nav__group">
+          <a href="#shop">Products</a>
+          <span class="nav__menu">
+            <a href="toilets.html">Smart Toilets &amp; Toilets</a>
+            <a href="faucets-and-shower-systems.html">Faucets &amp; Shower Systems</a>
+            <a href="bathtubs.html">Bathtubs &amp; Soaking Tubs</a>
+            <a href="tile-stone-and-mosaics.html">Tile, Stone &amp; Mosaics</a>
+            <a href="vanities-and-cabinetry.html">Vanities &amp; Cabinetry</a>
+            <a href="mirrors-and-medicine-cabinets.html">Mirrors &amp; Medicine Cabinets</a>
+            <a href="bathroom-lighting.html">Bathroom Lighting</a>
+            <a href="accessories-and-hardware.html">Accessories &amp; Hardware</a>
+          </span>
+        </span>
         <a href="#gallery">Gallery</a>
         <a href="#process">Process</a>
-        <a href="#areas">Service Areas</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
       </nav>
@@ -114,7 +126,7 @@
         </ul>
       </div>
       <div class="hero__card">
-        <form class="quote-card" id="heroForm" novalidate>
+        <form class="quote-card" id="heroForm" data-lead novalidate>
           <h3>Request a Free Quote</h3>
           <p class="quote-card__sub">Get a response within 24 hours.</p>
           <input type="text" name="name" placeholder="Full Name" required />
@@ -153,37 +165,124 @@
         <h2>Complete Bathroom Remodeling Services</h2>
         <p class="section__lead">Whatever your vision, our in-house designers and licensed craftsmen bring it to life with premium materials and precise workmanship.</p>
       </div>
-      <div class="cards">
-        <article class="card">
-          <div class="card__icon">🛁</div>
-          <h3>Full Bathroom Remodels</h3>
-          <p>Complete transformations — layout, plumbing, tile, vanities, lighting, and fixtures — managed start to finish by one dedicated team.</p>
+      <div class="cards cards--photo">
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1733426107854-ee00a25d72a7?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Full Bathroom Remodels</h3>
+            <p>Complete transformations — layout, plumbing, tile, vanities, lighting, and fixtures — managed start to finish by one dedicated team.</p>
+            <a class="card__link" href="#contact">Start your remodel</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">🚿</div>
-          <h3>Walk-In Showers</h3>
-          <p>Frameless glass, custom tile, and tub-to-shower conversions that add comfort, safety, and modern style.</p>
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1771681278369-e2a5480b8c29?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Walk-In Showers</h3>
+            <p>Frameless glass, custom tile, and tub-to-shower conversions that add comfort, safety, and modern style.</p>
+            <a class="card__link" href="faucets-and-shower-systems.html">Explore shower systems</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">✨</div>
-          <h3>Luxury Master Baths</h3>
-          <p>Spa-inspired retreats with heated floors, freestanding tubs, dual vanities, and designer finishes.</p>
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1776525433347-13ffc965601a?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Luxury Master Baths</h3>
+            <p>Spa-inspired retreats with heated floors, freestanding tubs, dual vanities, and designer finishes.</p>
+            <a class="card__link" href="bathtubs.html">See soaking tubs</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">🧱</div>
-          <h3>Custom Tile & Flooring</h3>
-          <p>Porcelain, marble, mosaic, and waterproof luxury vinyl installed with meticulous attention to detail.</p>
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Custom Tile &amp; Stone</h3>
+            <p>Porcelain, marble, and handcrafted mosaics installed with meticulous attention to detail.</p>
+            <a class="card__link" href="tile-stone-and-mosaics.html">Explore tile &amp; stone</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">♿</div>
-          <h3>Accessible & Aging-in-Place</h3>
-          <p>Curbless showers, grab bars, comfort-height fixtures, and ADA-friendly designs for safe, independent living.</p>
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1638799869566-b17fa794c4de?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Accessible &amp; Aging-in-Place</h3>
+            <p>Curbless showers, grab bars, comfort-height fixtures, and ADA-friendly designs for safe, independent living.</p>
+            <a class="card__link" href="#contact">Discuss your needs</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">🪞</div>
-          <h3>Powder Rooms & Small Baths</h3>
-          <p>Smart, space-maximizing designs that make even the smallest bathrooms feel bright and luxurious.</p>
+        <article class="card--photo">
+          <div class="card__bg" style="background-image:url('https://images.unsplash.com/photo-1600488999585-e4364713b90a?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="card__body">
+            <h3>Powder Rooms &amp; Small Baths</h3>
+            <p>Smart, space-maximizing designs that make even the smallest bathrooms feel bright and luxurious.</p>
+            <a class="card__link" href="vanities-and-cabinetry.html">Browse vanities</a>
+          </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section class="section section--alt" id="shop">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Shop by Category</p>
+        <h2>Premium Fixtures &amp; Finishes</h2>
+        <p class="section__lead">We design and install the finest bathroom products on the market — from smart toilets to designer lighting. Explore each collection.</p>
+      </div>
+      <div class="catgrid">
+        <a class="catcard" href="toilets.html">
+          <img src="https://images.unsplash.com/photo-1563204719-44395a035bb6?auto=format&fit=crop&w=500&q=75" alt="Smart toilets and modern toilets" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Smart Toilets</h3><p>TOTO · Duravit · Kallista</p></div>
+        </a>
+        <a class="catcard" href="faucets-and-shower-systems.html">
+          <img src="https://images.unsplash.com/photo-1771681744660-d3ff70bc24a2?auto=format&fit=crop&w=500&q=75" alt="Faucets and shower systems" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Faucets &amp; Showers</h3><p>Dornbracht · Gessi · Waterworks</p></div>
+        </a>
+        <a class="catcard" href="bathtubs.html">
+          <img src="https://images.unsplash.com/photo-1610178169668-530baa052915?auto=format&fit=crop&w=500&q=75" alt="Freestanding bathtubs and soaking tubs" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Bathtubs</h3><p>Victoria + Albert · MTI · BainUltra</p></div>
+        </a>
+        <a class="catcard" href="tile-stone-and-mosaics.html">
+          <img src="https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=500&q=75" alt="Tile, stone and mosaics" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Tile &amp; Stone</h3><p>Ann Sacks · Artistic Tile · Bisazza</p></div>
+        </a>
+        <a class="catcard" href="vanities-and-cabinetry.html">
+          <img src="https://images.unsplash.com/photo-1600488999585-e4364713b90a?auto=format&fit=crop&w=500&q=75" alt="Vanities and cabinetry" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Vanities</h3><p>Robern · Waterworks · Duravit</p></div>
+        </a>
+        <a class="catcard" href="mirrors-and-medicine-cabinets.html">
+          <img src="https://images.unsplash.com/photo-1778731660069-c26ea0eb6567?auto=format&fit=crop&w=500&q=75" alt="Mirrors and medicine cabinets" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Mirrors</h3><p>Robern · Waterworks · Duravit</p></div>
+        </a>
+        <a class="catcard" href="bathroom-lighting.html">
+          <img src="https://images.unsplash.com/photo-1572742482459-e04d6cfdd6f3?auto=format&fit=crop&w=500&q=75" alt="Bathroom lighting" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Lighting</h3><p>Visual Comfort · Waterworks</p></div>
+        </a>
+        <a class="catcard" href="accessories-and-hardware.html">
+          <img src="https://images.unsplash.com/photo-1761353854322-96e6ab127da4?auto=format&fit=crop&w=500&q=75" alt="Accessories and finishing hardware" loading="lazy" />
+          <span class="catcard__arrow">→</span>
+          <div class="catcard__overlay"><h3>Hardware</h3><p>Waterworks · Kallista · Gessi</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sweeping showcase -->
+  <section class="showcase showcase--left">
+    <div class="showcase__bg" style="background-image:url('https://images.unsplash.com/photo-1765745518673-b562b7304a53?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="container showcase__inner">
+      <div class="showcase__box">
+        <p class="eyebrow">Designed Around You</p>
+        <h2>Every Detail, Considered</h2>
+        <p>From the sweep of a freestanding tub to the warmth of layered lighting, we obsess over the details that make a bathroom feel like a private spa. One dedicated team designs and builds it all.</p>
+        <div class="showcase__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Get My Free Estimate</a>
+          <a href="#gallery" class="btn btn--ghost btn--lg">View the Gallery</a>
+        </div>
       </div>
     </div>
   </section>
@@ -196,22 +295,16 @@
         <h2>Recent Chicago Bathroom Projects</h2>
         <p class="section__lead">A look at some of the bathrooms we've designed and built across the city and suburbs.</p>
       </div>
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--tall">
-          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Modern remodeled bathroom with walk-in shower in Chicago" loading="lazy" />
-        </figure>
-        <figure class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Luxury master bathroom renovation with freestanding tub" loading="lazy" />
-        </figure>
-        <figure class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Contemporary bathroom vanity with custom tile" loading="lazy" />
-        </figure>
-        <figure class="gallery__item gallery__item--wide">
-          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1000&q=80" alt="Bright renovated bathroom with double vanity" loading="lazy" />
-        </figure>
-        <figure class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Elegant tiled shower remodel" loading="lazy" />
-        </figure>
+      <div class="masonry">
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?auto=format&fit=crop&w=800&q=80" alt="Luxury remodeled bathroom in Chicago" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1650894622076-e09ab837c502?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1650894622076-e09ab837c502?auto=format&fit=crop&w=800&q=80" alt="Modern master bathroom with freestanding tub" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1733426107854-ee00a25d72a7?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1733426107854-ee00a25d72a7?auto=format&fit=crop&w=800&q=80" alt="Contemporary bathroom renovation" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1642755622887-6aef7cbe0725?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1642755622887-6aef7cbe0725?auto=format&fit=crop&w=800&q=80" alt="Elegant walk-in shower remodel" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1770987685744-630d3c2494bd?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1770987685744-630d3c2494bd?auto=format&fit=crop&w=800&q=80" alt="Spa-inspired primary bathroom" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1691036365036-71da57ac5919?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1691036365036-71da57ac5919?auto=format&fit=crop&w=800&q=80" alt="Designer bathroom with custom tile" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1696987007764-7f8b85dd3033?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1696987007764-7f8b85dd3033?auto=format&fit=crop&w=800&q=80" alt="Bright renovated bathroom interior" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1644421439741-712c7fde7e95?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1644421439741-712c7fde7e95?auto=format&fit=crop&w=800&q=80" alt="Luxury bathroom with double vanity" loading="lazy" /></a>
+        <a class="masonry__item" data-full="https://images.unsplash.com/photo-1643949700215-e61cdca053f7?auto=format&fit=crop&w=1600&q=85"><img src="https://images.unsplash.com/photo-1643949700215-e61cdca053f7?auto=format&fit=crop&w=800&q=80" alt="Modern fixtures in a Chicago bathroom" loading="lazy" /></a>
       </div>
     </div>
   </section>
@@ -246,6 +339,29 @@
           <p>We inspect every detail together and back it with a 5-year workmanship warranty.</p>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Inline lead capture -->
+  <section class="leadband">
+    <div class="container leadband__inner">
+      <div>
+        <p class="eyebrow" style="color:#fff">Free, No-Obligation Quote</p>
+        <h2>Get Your Bathroom Estimate Today</h2>
+        <p>Tell us a little about your project and we'll follow up within 24 hours with next steps and a fixed-price estimate. No pressure, ever.</p>
+      </div>
+      <div class="leadband__form">
+        <form class="quote-card" data-lead novalidate>
+          <h3>Request a Free Quote</h3>
+          <p class="quote-card__sub">Get a response within 24 hours.</p>
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email Address" />
+          <input type="hidden" name="project" value="Homepage mid-page form" />
+          <button type="submit" class="btn btn--primary btn--block">Get My Free Quote</button>
+          <p class="quote-card__fine">No obligation. Your info is never sold.</p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -284,6 +400,22 @@
         <li>Evanston</li><li>Oak Park</li><li>Naperville</li><li>Skokie</li>
         <li>Arlington Heights</li><li>Schaumburg</li><li>Wilmette</li><li>Elmhurst</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Sweeping showcase (center) -->
+  <section class="showcase showcase--center">
+    <div class="showcase__bg" style="background-image:url('https://images.unsplash.com/photo-1781344334947-60c704bafd51?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="container showcase__inner">
+      <div class="showcase__box">
+        <p class="eyebrow">Your Dream Bathroom Awaits</p>
+        <h2>Built in Chicago, Backed for Years</h2>
+        <p>Premium fixtures, flawless craftsmanship, and a 5-year workmanship warranty — delivered on time and on budget across Chicagoland.</p>
+        <div class="showcase__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Get My Free Estimate</a>
+          <a href="tel:+13125550199" class="btn btn--ghost btn--lg">Call (312) 555-0199</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -358,7 +490,7 @@
         </div>
         <p class="cta__hours">Mon–Sat: 8:00 AM – 6:00 PM</p>
       </div>
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" data-lead novalidate>
         <div class="form-row">
           <input type="text" name="name" placeholder="Full Name *" required />
           <input type="tel" name="phone" placeholder="Phone *" required />
@@ -391,14 +523,20 @@
         <p>Chicago's trusted bathroom remodeling and renovation experts. Licensed, bonded & insured.</p>
       </div>
       <div class="footer__col">
-        <h4>Services</h4>
-        <a href="#services">Full Remodels</a>
-        <a href="#services">Walk-In Showers</a>
-        <a href="#services">Luxury Master Baths</a>
-        <a href="#services">Accessible Bathrooms</a>
+        <h4>Products</h4>
+        <a href="toilets.html">Smart Toilets &amp; Toilets</a>
+        <a href="faucets-and-shower-systems.html">Faucets &amp; Shower Systems</a>
+        <a href="bathtubs.html">Bathtubs &amp; Soaking Tubs</a>
+        <a href="tile-stone-and-mosaics.html">Tile, Stone &amp; Mosaics</a>
+        <a href="vanities-and-cabinetry.html">Vanities &amp; Cabinetry</a>
+        <a href="mirrors-and-medicine-cabinets.html">Mirrors &amp; Medicine Cabinets</a>
+        <a href="bathroom-lighting.html">Bathroom Lighting</a>
+        <a href="accessories-and-hardware.html">Accessories &amp; Hardware</a>
       </div>
       <div class="footer__col">
         <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#shop">Products</a>
         <a href="#gallery">Gallery</a>
         <a href="#process">Our Process</a>
         <a href="#reviews">Reviews</a>
@@ -422,6 +560,6 @@
   <!-- Sticky mobile call bar -->
   <a href="tel:+13125550199" class="mobile-call">📞 Call for a Free Quote</a>
 
-  <script src="script.js"></script>
+  <script src="gallery.js"></script>
 </body>
 </html>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bathroomremodelingchicago.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://bathroomremodelingchicago.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/toilets.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/faucets-and-shower-systems.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/bathtubs.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/tile-stone-and-mosaics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/vanities-and-cabinetry.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/mirrors-and-medicine-cabinets.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/bathroom-lighting.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bathroomremodelingchicago.com/accessories-and-hardware.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
