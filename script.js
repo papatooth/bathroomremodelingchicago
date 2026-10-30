@@ -32,7 +32,7 @@ function showToast(message) {
 // NOTE: This is a front-end demo handler. To receive real leads, point
 // `LEAD_ENDPOINT` at your backend / form service (e.g. Formspree, Resend
 // serverless function, etc.) or wire up email delivery.
-const LEAD_ENDPOINT = ""; // e.g. "https://formspree.io/f/yourid"
+const LEAD_ENDPOINT = "https://brc-lead-api.onrender.com/api/lead";
 
 async function handleLead(form, e) {
   e.preventDefault();
