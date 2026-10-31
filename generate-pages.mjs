@@ -464,9 +464,11 @@ function categoryPage(slug) {
   const c = content[p.key];
   const il = installLabels[p.key];
   const imgs = pool[p.key];
+  // Assign each on-page slot a unique image so nothing repeats across hero / features / why / gallery.
   const heroImg = imgs[0];
-  const featImgs = [imgs[1] || imgs[0], imgs[2] || imgs[0]];
-  const galleryImgs = imgs.slice(3).concat(imgs.slice(1, 3));
+  const featImgs = [imgs[1], imgs[2]];
+  const whyImg = imgs[3];
+  const galleryImgs = imgs.slice(4);
   const canonical = `https://bathroomremodelingchicago.com/${p.slug}.html`;
 
   const brandChips = c.brands.map((b) => `<span class="brand-chip">${b}</span>`).join("\n        ");
@@ -566,7 +568,7 @@ ${masonry}
 
   <section class="section section--alt">
     <div class="container why">
-      <div class="why__media"><img src="${img(featImgs[0], 900, 80)}" alt="Why Chicago homeowners choose us for ${c.title.toLowerCase()}" loading="lazy" /></div>
+      <div class="why__media"><img src="${img(whyImg, 900, 80)}" alt="Why Chicago homeowners choose us for ${c.title.toLowerCase()}" loading="lazy" /></div>
       <div class="why__content">
         <p class="eyebrow">Why Choose Us</p>
         <h2>Why Choose Us for ${il} in Chicago</h2>
