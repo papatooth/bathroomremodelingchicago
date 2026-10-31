@@ -17,6 +17,18 @@ const products = [
 ];
 const bySlug = Object.fromEntries(products.map((p) => [p.slug, p]));
 
+// Keyword-focused "installation" labels used in H1/H2/FAQ/Why headings for SEO.
+const installLabels = {
+  toilets: "Toilet Installation",
+  faucets: "Faucet & Shower System Installation",
+  bathtubs: "Bathtub Installation",
+  tile: "Tile & Stone Installation",
+  vanities: "Vanity & Cabinetry Installation",
+  mirrors: "Mirror & Medicine Cabinet Installation",
+  lighting: "Bathroom Lighting Installation",
+  accessories: "Accessory & Hardware Installation",
+};
+
 const content = {
   toilets: {
     title: "Smart Toilets & Modern Toilets", eyebrow: "Fixtures",
@@ -58,7 +70,7 @@ const content = {
   },
   faucets: {
     title: "Faucets & Shower Systems", eyebrow: "Fixtures",
-    metaTitle: "Luxury Faucets & Custom Shower Systems in Chicago | Bathroom Remodeling Chicago",
+    metaTitle: "Faucet & Shower System Installation in Chicago | Bathroom Remodeling Chicago",
     metaDesc: "Designer faucets and custom shower systems installed in Chicago — rainfall heads, body jets, and thermostatic valves from Dornbracht, Gessi & Waterworks. Free estimates.",
     brands: ["Dornbracht", "Gessi", "Waterworks"],
     heroLine: "Designer faucets and custom shower systems, engineered and installed for everyday luxury in Chicago bathrooms.",
@@ -172,7 +184,7 @@ const content = {
   },
   vanities: {
     title: "Vanities & Cabinetry", eyebrow: "Cabinetry",
-    metaTitle: "Custom Bathroom Vanities & Cabinetry in Chicago | Bathroom Remodeling Chicago",
+    metaTitle: "Bathroom Vanity & Cabinetry Installation in Chicago | Bathroom Remodeling Chicago",
     metaDesc: "Floating and furniture-style bathroom vanities installed in Chicago with custom countertops and smart storage. Robern, Waterworks & Duravit. Free estimates.",
     brands: ["Robern", "Waterworks", "Duravit"],
     heroLine: "Floating and furniture-style vanities with the storage and finishes your Chicago bathroom deserves.",
@@ -286,7 +298,7 @@ const content = {
   },
   accessories: {
     title: "Accessories & Finishing Hardware", eyebrow: "Hardware",
-    metaTitle: "Bathroom Accessories & Finishing Hardware in Chicago | Bathroom Remodeling Chicago",
+    metaTitle: "Bathroom Accessory & Hardware Installation in Chicago | Bathroom Remodeling Chicago",
     metaDesc: "Coordinated towel bars, hooks, pulls, and finishing hardware installed in Chicago bathrooms. Designer finishes from Waterworks, Kallista & Gessi. Free estimates.",
     brands: ["Waterworks", "Kallista", "Gessi"],
     heroLine: "Coordinated towel bars, hooks, and finishing hardware that make your Chicago bathroom feel complete.",
@@ -450,6 +462,7 @@ function leadFormBlock(projectValue) {
 function categoryPage(slug) {
   const p = bySlug[slug];
   const c = content[p.key];
+  const il = installLabels[p.key];
   const imgs = pool[p.key];
   const heroImg = imgs[0];
   const featImgs = [imgs[1] || imgs[0], imgs[2] || imgs[0]];
@@ -499,7 +512,7 @@ ${header(slug)}
     <div class="container subhero__inner">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>${c.title}</nav>
       <p class="eyebrow">${c.eyebrow}</p>
-      <h1>${c.title} in Chicago</h1>
+      <h1>${il} in Chicago</h1>
       <p>${c.heroLine}</p>
       <div class="subhero__actions">
         <a href="index.html#contact" class="btn btn--primary btn--lg">Get My Free Estimate</a>
@@ -517,6 +530,7 @@ ${header(slug)}
 
   <section class="section">
     <div class="container container--narrow prose">
+      <h2>Professional ${il} in Chicago</h2>
 ${overview}
     </div>
     <div class="container" style="margin-top:36px">
@@ -554,8 +568,8 @@ ${masonry}
     <div class="container why">
       <div class="why__media"><img src="${img(featImgs[0], 900, 80)}" alt="Why Chicago homeowners choose us for ${c.title.toLowerCase()}" loading="lazy" /></div>
       <div class="why__content">
-        <p class="eyebrow">Why Chicago Chooses Us</p>
-        <h2>${c.title} Done Right</h2>
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Why Choose Us for ${il} in Chicago</h2>
         <ul class="ticks">
 ${why}
         </ul>
@@ -568,7 +582,7 @@ ${why}
     <div class="container container--narrow">
       <div class="section__head">
         <p class="eyebrow">Questions</p>
-        <h2>${c.title} FAQ</h2>
+        <h2>${il} FAQ</h2>
       </div>
       <div class="faq">
 ${faqItems}
