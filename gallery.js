@@ -37,6 +37,7 @@
 
   // --- Lead form handling (any form with [data-lead]) ---
   var LEAD_ENDPOINT = "https://brc-lead-api.onrender.com/api/lead";
+  var PAGE_LOADED_AT = Date.now(); // timing trap: real users take time to fill the form
   function handleLead(form, e) {
     e.preventDefault();
     var required = form.querySelectorAll("[required]");
@@ -51,6 +52,7 @@
     }
     var data = {};
     new FormData(form).forEach(function (v, k) { data[k] = v; });
+    data.elapsed = Date.now() - PAGE_LOADED_AT; // ms the user spent before submitting
     var btn = form.querySelector('button[type="submit"]');
     var original = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }

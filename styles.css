@@ -454,6 +454,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
 .legal ul { margin: 0 0 12px 22px; }
 .legal a { color: var(--teal); text-decoration: underline; }
 
+/* ===== Honeypot (anti-spam; hidden from real users) ===== */
+.hp-wrap { position: absolute !important; left: -9999px !important; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
+
 /* ===== Footer legal links ===== */
 .footer__legal { display: flex; gap: 14px; flex-wrap: wrap; }
 .footer__legal a { color: rgba(255,255,255,0.6); }
