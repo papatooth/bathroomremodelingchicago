@@ -50,6 +50,13 @@
       }
       required[i].style.borderColor = "";
     }
+    // --- Cloudflare Turnstile: require a completed challenge token before submitting ---
+    var tsWidget = form.querySelector(".cf-turnstile");
+    var tsField = form.querySelector('[name="cf-turnstile-response"]');
+    if (tsWidget && (!tsField || !tsField.value)) {
+      showToast("Please complete the verification below, then submit.");
+      return;
+    }
     var data = {};
     new FormData(form).forEach(function (v, k) { data[k] = v; });
     data.elapsed = Date.now() - PAGE_LOADED_AT; // ms the user spent before submitting
@@ -64,7 +71,11 @@
       .then(function (res) { if (!res.ok) throw new Error("bad status"); return res.json(); })
       .then(function () { form.reset(); showToast("Thanks! We'll contact you within 24 hours."); })
       .catch(function () { showToast("Sorry, something went wrong. Please call (312) 555-0199."); })
-      .finally(function () { if (btn) { btn.disabled = false; btn.textContent = original; } });
+      .finally(function () {
+        if (btn) { btn.disabled = false; btn.textContent = original; }
+        // Turnstile tokens are single-use; reset the widget so a retry gets a fresh token.
+        if (window.turnstile && tsWidget) { try { window.turnstile.reset(tsWidget); } catch (e) {} }
+      });
   }
   document.querySelectorAll("form[data-lead]").forEach(function (form) {
     form.addEventListener("submit", function (e) { handleLead(form, e); });
