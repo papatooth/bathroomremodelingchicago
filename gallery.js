@@ -69,7 +69,7 @@
       body: JSON.stringify(data),
     })
       .then(function (res) { if (!res.ok) throw new Error("bad status"); return res.json(); })
-      .then(function () { form.reset(); showToast("Thanks! We'll contact you within 24 hours."); })
+      .then(function () { form.reset(); window.location.href = "/thank-you.html"; })
       .catch(function () { showToast("Sorry, something went wrong. Please call (312) 555-0199."); })
       .finally(function () {
         if (btn) { btn.disabled = false; btn.textContent = original; }
