@@ -70,7 +70,7 @@
     })
       .then(function (res) { if (!res.ok) throw new Error("bad status"); return res.json(); })
       .then(function () { form.reset(); window.location.href = "/thank-you.html"; })
-      .catch(function () { showToast("Sorry, something went wrong. Please call (312) 555-0199."); })
+      .catch(function () { showToast("Sorry, something went wrong. Please call (312) 500-5735."); })
       .finally(function () {
         if (btn) { btn.disabled = false; btn.textContent = original; }
         // Turnstile tokens are single-use; reset the widget so a retry gets a fresh token.

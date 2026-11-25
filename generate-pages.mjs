@@ -2,8 +2,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 const pool = JSON.parse(readFileSync("image-pool.json", "utf8"));
 const img = (u, w = 1200, q = 80) => `${u}?auto=format&fit=crop&w=${w}&q=${q}`;
-const phone = "(312) 555-0199";
-const tel = "+13125550199";
+const phone = "(312) 500-5735";
+const tel = "+13125005735";
 
 const products = [
   { slug: "toilets", label: "Smart Toilets & Toilets", key: "toilets" },
@@ -33,7 +33,7 @@ const content = {
   toilets: {
     title: "Smart Toilets & Modern Toilets", eyebrow: "Fixtures",
     metaTitle: "Smart Toilet & Toilet Installation in Chicago | Bathroom Remodeling Chicago",
-    metaDesc: "Expert smart toilet, wall-hung, and high-efficiency toilet installation in Chicago. Premium TOTO, Duravit & Kallista fixtures. Free estimates — call (312) 555-0199.",
+    metaDesc: "Expert smart toilet, wall-hung, and high-efficiency toilet installation in Chicago. Premium TOTO, Duravit & Kallista fixtures. Free estimates — call (312) 500-5735.",
     brands: ["TOTO", "Duravit", "Kallista"],
     heroLine: "From sleek one-piece designs to fully featured smart toilets — expertly selected and installed for Chicago homes.",
     overview: [
@@ -223,7 +223,7 @@ const content = {
   mirrors: {
     title: "Mirrors & Medicine Cabinets", eyebrow: "Cabinetry",
     metaTitle: "Backlit Mirrors & Medicine Cabinet Installation in Chicago | Bathroom Remodeling Chicago",
-    metaDesc: "LED backlit mirrors, anti-fog mirrors, and recessed medicine cabinets installed in Chicago bathrooms. Robern, Waterworks & Duravit. Free estimates — (312) 555-0199.",
+    metaDesc: "LED backlit mirrors, anti-fog mirrors, and recessed medicine cabinets installed in Chicago bathrooms. Robern, Waterworks & Duravit. Free estimates — (312) 500-5735.",
     brands: ["Robern", "Waterworks", "Duravit"],
     heroLine: "Backlit mirrors and smart medicine cabinets that add light, space, and storage to Chicago bathrooms.",
     overview: [
